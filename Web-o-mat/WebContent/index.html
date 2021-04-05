@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+Copyright 2021 André Büttemeyer
+Free to use under the MIT license.
+http://www.opensource.org/licenses/mit-license.php
+-->
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="skeleton.css">
+<title>Web-o-mat Login Page</title>
+</head>
+<body>
+<h1>Login Form</h1> 
+<br/>  
+<form action="Web-o-mat-logincheck" method="post">
+	<div class="row">
+		<div class="four columns">
+			<label for="userid">UserID</label>
+			<input class="u-full-width" type="text" name="userid" id="userid" placeholder="UserID/Department"/>
+		</div>
+	</div>
+	<div class="row">
+		<div class="four columns">
+			<label for="pass">Password</label>
+			<input class="u-full-width" type="password" name="pass" id="pass" placeholder="password"/>
+		</div>
+	</div>
+	<div class="row">
+		<div class="four columns">	
+			<input class="button-primary" type="submit" value="login"/>
+		</div>
+	</div>
+</form>  
+</body>
+</html>
