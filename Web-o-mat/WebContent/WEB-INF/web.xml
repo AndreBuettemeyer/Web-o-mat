@@ -10,7 +10,7 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-    <servlet>
+  	<servlet>
   		<servlet-name>webomat_logincheck</servlet-name>
   		<servlet-class>webomat.local.Webomat_Logincheck</servlet-class>
   	</servlet>
@@ -18,5 +18,19 @@
   		<servlet-name>webomat_logincheck</servlet-name>
   		<url-pattern>/webomat_logincheck</url-pattern>
   	</servlet-mapping>
+  
+    <servlet>
+  		<servlet-name>webomat_loginerrorpage</servlet-name>
+  		<servlet-class>webomat.local.Webomat_Loginerrorpage</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>webomat_loginerrorpage</servlet-name>
+  		<url-pattern>/webomat_loginerrorpage</url-pattern>
+  	</servlet-mapping>
+  
+  	<context-param>
+		<param-name>AERestURL</param-name>
+ 		<param-value>http://W2016-AE:8088/ae/api/v1/42/</param-value>
+  	</context-param>
   
 </web-app>
